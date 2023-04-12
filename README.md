@@ -11,7 +11,7 @@ CSV file (1990-present): [daily UST yields](https://raw.githubusercontent.com/ep
 ```python
 import pandas as pd
 url = "https://raw.githubusercontent.com/epogrebnyak/data-ust/master/ust.csv"
-df = pd.read_csv(df, parse_dates=["date"]).set_index("date")
+df = pd.read_csv(url, parse_dates=["date"]).set_index("date")
 ```
 
 ## Download current dataset
